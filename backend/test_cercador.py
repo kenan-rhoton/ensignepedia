@@ -2,7 +2,7 @@ import cercador
 import unittest
 
 class ParaulesGuardades(unittest.TestCase):
-    paraules = ("ós", "Ós", "conill")
+    paraules = ("abraçada", "Abraçada")
 
     def test_existeix(self):
         for paraula in self.paraules:
@@ -13,7 +13,7 @@ class ParaulesGuardades(unittest.TestCase):
     
     def test_url(self):
         for paraula in self.paraules:
-            self.assertEqual(cercador.url(paraula), "../backend/videos/" + paraula.lower() + ".mp4")
+            self.assertEqual(cercador.url(paraula), "../backend/videos/" + paraula.lower() + ".gif")
 
         self.assertEqual(cercador.url("piñoàêü"), "SenseResultat")
         self.assertEqual(cercador.url(""), "SenseResultat")

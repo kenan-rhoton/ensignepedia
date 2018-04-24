@@ -4,9 +4,7 @@ function retorna(url) {
         el.innerHTML += "No la tenim registrada";
     } else {
         el.innerHTML +=
-            "<video width='320' height='240' controls autoplay muted>" +
-            "<source src='" + url + "'>" +
-            "</video>";
+            "<img width=250 height=auto src='" + url + "'>";
     }
 }
 
