@@ -1,7 +1,7 @@
 import os.path
 
 def paraula_existeix(paraula):
-    return os.path.isfile("videos/" + paraula.lower() + ".mp4")
+    return os.path.isfile("../videos/" + paraula.lower() + ".mp4")
 
 def url(paraula):
     paraula = paraula.lower();
